@@ -1,7 +1,5 @@
 library(plyr)
-
 library(dplyr)
-
 library(data.table)
 
 fichiertemporaire<- tempfile()
