@@ -5,7 +5,7 @@ library(data.table)
 fichiertemporaire<- tempfile()
 
 download.file("http://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip",temp)
-unzip(fichiertemporaire, list = TRUE) #This provides the list of variables and I choose the ones that are applicable for this data set
+unzip(fichiertemporaire, list = TRUE) 
 yTest <- read.table(unzip(fichiertemporaire, "UCI HAR Dataset/test/y_test.txt"))
 XTest <- read.table(unzip(fichiertemporaire, "UCI HAR Dataset/test/X_test.txt"))
 SubjectTest <- read.table(unzip(fichiertemporaire, "UCI HAR Dataset/test/subject_test.txt"))
